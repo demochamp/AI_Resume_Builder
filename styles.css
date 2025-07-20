@@ -3,11 +3,11 @@
   color: #f9fafb;
 }
 
-.dark .container{
+.dark .container {
   color: #000000;
 }
 
-.dark .text-5xl{
+.dark .text-5xl {
   color: #000000;
 }
 
@@ -15,11 +15,11 @@
   background-color: #000000;
 }
 
-.dark #resume-form{
+.dark #resume-form {
   background-color: #000000;
 }
 
-.dark #resume-preview{
+.dark #resume-preview {
   background-color: #111827;
 }
 
@@ -41,7 +41,7 @@
   border-color: #4b5563;
 }
 
-.dark .text-lg{
+.dark .text-lg {
   color: #ffffff;
 }
 
@@ -118,14 +118,39 @@ textarea:focus {
     padding: 1rem;
   }
 
+  .tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5px;
+}
+
+@media (max-width: 480px) {
   .tab-btn {
-    font-size: 0.9rem;
+    font-size: 12px;
+    padding: 5px 5px;
   }
+}
 
   .grid-cols-2 {
     grid-template-columns: 1fr;
   }
+
+  #resume-preview .flex {
+    flex-direction: column !important;
+    gap: 0.5rem;
+    align-items: stretch;
+    margin-left: auto;
+  }
+
+  #resume-preview .flex>button,
+  #resume-preview .flex>a {
+    width: 100% !important;
+    text-align: center;
+    margin-left: auto;
+  }
 }
+
 
 /* Card Styling */
 #preview-content>div {
