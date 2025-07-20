@@ -3,7 +3,11 @@
   color: #f9fafb;
 }
 
-.dark .container {
+.dark .text-white {
+  color: #000000;
+}
+
+.dark .text-2xl {
   color: #000000;
 }
 
@@ -62,6 +66,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 #resume-form,
 #resume-preview {
   background: rgba(255, 255, 255, 0.8);
@@ -119,18 +125,18 @@ textarea:focus {
   }
 
   .tab-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5px;
-}
-
-@media (max-width: 480px) {
-  .tab-btn {
-    font-size: 12px;
-    padding: 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5px;
   }
-}
+
+  @media (max-width: 480px) {
+    .tab-btn {
+      font-size: 12px;
+      padding: 5px 5px;
+    }
+  }
 
   .grid-cols-2 {
     grid-template-columns: 1fr;
@@ -148,6 +154,10 @@ textarea:focus {
     width: 100% !important;
     text-align: center;
     margin-left: auto;
+  }
+
+  .text-white {
+    text-align: center;
   }
 }
 
